@@ -13,6 +13,7 @@ app.use(express.json());
 
 //use the the router object (and all it's defined routes)
 app.use("/cart-items", routes);
+app.use("/:id", routes)
 
 // define the port
 const port = 3000;
